@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="created plots for feature distributions, split data">
+    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zadatak_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +54,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit with project setup and loading training data file" />
     <MESSAGE value="created plots for feature distributions, split data" />
-    <option name="LAST_COMMIT_MESSAGE" value="created plots for feature distributions, split data" />
+    <MESSAGE value="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest" />
+    <option name="LAST_COMMIT_MESSAGE" value="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest" />
   </component>
 </project>

@@ -3,3 +3,5 @@ matplotlib
 seaborn
 scikit-learn
 imblearn
+lightgbm
+xgboost
