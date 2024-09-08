@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest">
+    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="tried other models such as">
+      <change afterPath="$PROJECT_DIR$/zadatak_3/class_distribution.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/log_transformed_feature_distributions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/normal_feature_distributions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zadatak_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class_distribution.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_transformed_feature_distributions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/normal_feature_distributions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_OLD.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,19 +35,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/grdop/DataspellProjects/list_labs&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.zadatak_3 (1).executor": "Run",
+    "Python.zadatak_3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/grdop/DataspellProjects/list_labs",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\grdop\DataspellProjects\list_labs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grdop\DataspellProjects\list_labs\zadatak_3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.zadatak_3 (1)">
+    <configuration name="zadatak_3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="list_labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zadatak_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadatak_3/zadatak_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zadatak_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="list_labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\grdop\DataspellProjects\list_labs\zadatak_3\zadatak_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.zadatak_3 (1)" />
+        <item itemvalue="Python.zadatak_3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -55,6 +118,7 @@
     <MESSAGE value="initial commit with project setup and loading training data file" />
     <MESSAGE value="created plots for feature distributions, split data" />
     <MESSAGE value="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest" />
-    <option name="LAST_COMMIT_MESSAGE" value="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest" />
+    <MESSAGE value="tried other models such as" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried other models such as" />
   </component>
 </project>
