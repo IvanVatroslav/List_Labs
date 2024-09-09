@@ -6,3 +6,4 @@ imblearn
 lightgbm
 xgboost
 six
+rasterio

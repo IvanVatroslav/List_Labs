@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="calculated other metrics to evaluate model performance, added plot for distribution of features with mixed log and non-transformed (normal)">
-      <change afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_prezentacija.ipynb" afterDir="false" />
+    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="created notebook for presenting results of the model training with placeholder text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -37,13 +38,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.zadatak_1.executor": "Run",
     "Python.zadatak_3 (1).executor": "Run",
     "Python.zadatak_3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/ivan.zeljeznjak/DataspellProjects/List_Labs/zadatak_3",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -51,11 +53,34 @@
       <recent name="C:\Users\grdop\DataspellProjects\list_labs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ivan.zeljeznjak\DataspellProjects\List_Labs\zadatak_1" />
       <recent name="C:\Users\ivan.zeljeznjak\DataspellProjects\List_Labs\zadatak_3" />
       <recent name="C:\Users\grdop\DataspellProjects\list_labs\zadatak_3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.zadatak_3 (1)">
+  <component name="RunManager" selected="Python.zadatak_1">
+    <configuration name="zadatak_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="list_labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zadatak_1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadatak_1/zadatak_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="zadatak_3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="list_labs" />
       <option name="ENV_FILES" value="" />
@@ -102,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zadatak_1" />
         <item itemvalue="Python.zadatak_3 (1)" />
         <item itemvalue="Python.zadatak_3" />
       </list>
@@ -121,6 +147,7 @@
     <MESSAGE value="built models for normal data, all log data, mixed (where it seemed appropriate) for random forest" />
     <MESSAGE value="tried other models such as" />
     <MESSAGE value="calculated other metrics to evaluate model performance, added plot for distribution of features with mixed log and non-transformed (normal)" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculated other metrics to evaluate model performance, added plot for distribution of features with mixed log and non-transformed (normal)" />
+    <MESSAGE value="created notebook for presenting results of the model training with placeholder text" />
+    <option name="LAST_COMMIT_MESSAGE" value="created notebook for presenting results of the model training with placeholder text" />
   </component>
 </project>
