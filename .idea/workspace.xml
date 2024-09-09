@@ -5,15 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="tried other models such as">
-      <change afterPath="$PROJECT_DIR$/zadatak_3/class_distribution.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadatak_3/log_transformed_feature_distributions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadatak_3/normal_feature_distributions.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/mixed_feature_distributions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/results/confusion_matrices_60-20-20_Split.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/results/confusion_matrices_70-15-15_Split.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/results/cross_validation_multi_metric_results_60_20_20_split.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/results/cross_validation_multi_metric_results_70_15_15_split.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/results/final_test_results_60_20_20_split.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/results/final_test_results_70_15_15_split.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/list_labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/list_labs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_transformed_feature_distributions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/normal_feature_distributions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zadatak_3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_OLD.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/KNN_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/KNN_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/KNN_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/KNN_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/KNN_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/KNN_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/LightGBM_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/LightGBM_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/LightGBM_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/LightGBM_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/LightGBM_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/LightGBM_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Logistic_Regression_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Logistic_Regression_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Logistic_Regression_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Logistic_Regression_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Logistic_Regression_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Logistic_Regression_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Random_Forest_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Random_Forest_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Random_Forest_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Random_Forest_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Random_Forest_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/Random_Forest_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/SVM_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/SVM_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/SVM_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/SVM_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/SVM_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/SVM_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/XGBoost_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/XGBoost_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/XGBoost_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/XGBoost_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/XGBoost_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/60-20-20_Split/XGBoost_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/KNN_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/KNN_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/KNN_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/KNN_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/KNN_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/KNN_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/LightGBM_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/LightGBM_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/LightGBM_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/LightGBM_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/LightGBM_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/LightGBM_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Logistic_Regression_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Logistic_Regression_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Logistic_Regression_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Logistic_Regression_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Logistic_Regression_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Logistic_Regression_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Random_Forest_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Random_Forest_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Random_Forest_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Random_Forest_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Random_Forest_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/Random_Forest_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/SVM_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/SVM_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/SVM_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/SVM_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/SVM_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/SVM_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/XGBoost_Log.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/XGBoost_Log.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/XGBoost_Mixed.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/XGBoost_Mixed.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/XGBoost_Normal.joblib" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/models/70-15-15_Split/XGBoost_Normal.joblib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/results/confusion_matrices_60_20_20_Split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/results/confusion_matrices_70_15_15_Split.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/results/cv_results_60_20_20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/results/cv_results_70_15_15.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/results/test_results_60_20_20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/results/test_results_70_15_15.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/zadatak_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/zadatak_3_OLD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_OLD.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +88,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/grdop/DataspellProjects/list_labs",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/ivan.zeljeznjak/DataspellProjects/List_Labs/zadatak_3",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -51,6 +97,7 @@
       <recent name="C:\Users\grdop\DataspellProjects\list_labs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ivan.zeljeznjak\DataspellProjects\List_Labs\zadatak_3" />
       <recent name="C:\Users\grdop\DataspellProjects\list_labs\zadatak_3" />
     </key>
   </component>
@@ -109,7 +156,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-65c742565061-c6172f9078bd-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-233.14475.37" />
+        <option value="bundled-python-sdk-8169a31fad14-083d02a8fb4b-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-241.14494.247" />
       </set>
     </attachedChunks>
   </component>
