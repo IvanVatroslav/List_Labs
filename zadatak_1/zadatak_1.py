@@ -1,89 +1,66 @@
-import rasterio
+from osgeo import gdal
 import numpy as np
-import logging
-from rasterio.errors import RasterioIOError
-import subprocess
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-
-def inspect_band(src, band_num, band_name):
-    band_data = src.read(band_num)
-    logging.info(f"{band_name} band - Shape: {band_data.shape}, Type: {band_data.dtype}")
-    logging.info(f"Range: {np.min(band_data)} to {np.max(band_data)}")
-    logging.info(f"Sample data (5x5 corner): \n{band_data[:5, :5]}")
-
-    # Save individual band
-    with rasterio.open(f"{band_name.lower()}_band.tif", 'w', driver='GTiff',
-                       width=src.width, height=src.height,
-                       count=1, dtype=band_data.dtype, crs=src.crs,
-                       transform=src.transform) as dst:
-        dst.write(band_data, 1)
-    logging.info(f"Saved {band_name} band as {band_name.lower()}_band.tif")
+# Suppress GDAL warnings
+gdal.UseExceptions()
+gdal.PushErrorHandler('CPLQuietErrorHandler')
 
 
-def calculate_index(band1, band2, name):
-    np.seterr(divide='ignore', invalid='ignore')
-    index = (band1.astype(np.float32) - band2.astype(np.float32)) / (
-                band1.astype(np.float32) + band2.astype(np.float32))
-    index_valid = np.where(np.isfinite(index), index, np.nan)
-
-    logging.info(f"{name} calculation - Shape: {index_valid.shape}, Type: {index_valid.dtype}")
-    logging.info(f"Range: {np.nanmin(index_valid)} to {np.nanmax(index_valid)}")
-    logging.info(f"Sample data (5x5 corner): \n{index_valid[:5, :5]}")
-
-    return index_valid
+def read_band(dataset, band_number):
+    band = dataset.GetRasterBand(band_number)
+    return band.ReadAsArray().astype(np.float32)
 
 
-def save_geotiff(data, output_path, src):
-    profile = src.profile.copy()
-    profile.update(dtype=rasterio.float32, count=1, nodata=np.nan)
+def calculate_index(band1, band2):
+    # Add a small epsilon to avoid division by zero
+    epsilon = 1e-8
+    return np.where(
+        (band1 + band2) != 0,
+        (band1 - band2) / (band1 + band2 + epsilon),
+        -9999  # Use -9999 as NoData value
+    )
 
-    with rasterio.open(output_path, 'w', **profile) as dst:
-        dst.write(data.astype(rasterio.float32), 1)
-    logging.info(f"Saved result as {output_path}")
+
+def save_tiff(output_path, data, input_dataset):
+    driver = gdal.GetDriverByName('GTiff')
+    rows, cols = data.shape
+    dataset = driver.Create(output_path, cols, rows, 1, gdal.GDT_Float32,
+                            options=['COMPRESS=DEFLATE', 'INTERLEAVE=BAND'])
+    dataset.SetGeoTransform(input_dataset.GetGeoTransform())
+    dataset.SetProjection(input_dataset.GetProjection())
+    band = dataset.GetRasterBand(1)
+    band.WriteArray(data)
+    band.SetNoDataValue(-9999)
+    dataset.FlushCache()
+    return dataset
 
 
-def run_gdalinfo(file_path):
+def process_image(input_file):
     try:
-        result = subprocess.run(['gdalinfo', file_path], capture_output=True, text=True)
-        logging.info(f"GDALINFO for {file_path}:\n{result.stdout}")
+        dataset = gdal.Open(input_file)
+        if dataset is None:
+            raise IOError(f"Unable to open {input_file}")
+
+        print(f"Satelitska snimka sadrži {dataset.RasterCount} kanala.")
+
+        band_4 = read_band(dataset, 4)
+        band_8 = read_band(dataset, 8)
+        band_11 = read_band(dataset, 11)
+
+        ndvi = calculate_index(band_8, band_4)
+        ndmi = calculate_index(band_8, band_11)
+
+        save_tiff('ndvi_output.tiff', ndvi, dataset)
+        save_tiff('ndmi_output.tiff', ndmi, dataset)
+
+        print(f"Prosječna vrijednost NDVI: {np.mean(ndvi[ndvi != -9999]):.4f}")
+        print(f"Prosječna vrijednost NDMI: {np.mean(ndmi[ndmi != -9999]):.4f}")
+        print("TIFF files created successfully.")
+
     except Exception as e:
-        logging.error(f"Error running gdalinfo: {e}")
-
-
-def main():
-    image_path = "response_bands.tiff"
-
-    try:
-        with rasterio.open(image_path) as src:
-            logging.info(f"Opened image: {image_path}")
-            logging.info(f"Image shape: {src.shape}, CRS: {src.crs}, Bands: {src.count}")
-
-            run_gdalinfo(image_path)
-
-            red = src.read(4)
-            nir = src.read(8)
-            swir = src.read(11)
-
-            inspect_band(src, 4, "Red")
-            inspect_band(src, 8, "NIR")
-            inspect_band(src, 11, "SWIR")
-
-            ndvi = calculate_index(nir, red, "NDVI")
-            ndmi = calculate_index(nir, swir, "NDMI")
-
-            save_geotiff(ndvi, "ndvi_debug.tif", src)
-            save_geotiff(ndmi, "ndmi_debug.tif", src)
-
-            run_gdalinfo("ndvi_debug.tif")
-            run_gdalinfo("ndmi_debug.tif")
-
-    except RasterioIOError as e:
-        logging.error(f"Error opening the image: {e}")
-    except Exception as e:
-        logging.error(f"An unexpected error occurred: {e}", exc_info=True)
+        print(f"An error occurred: {str(e)}")
 
 
 if __name__ == "__main__":
-    main()
+    input_file = "response_bands.tiff"
+    process_image(input_file)
