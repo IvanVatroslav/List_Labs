@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="solved zadatak_1">
-      <change afterPath="$PROJECT_DIR$/zadatak_1/response_bands.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadatak_2/filtered_objects.geojson" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadatak_2/zadatak_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zadatak_3/training_data.csv" afterDir="false" />
+    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="solved zadata_2, commited original data from zip file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/zadatak_3_OLD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_OLD.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zadatak_3/zadatak_3_prezentacija.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_prezentacija.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +203,7 @@
     <MESSAGE value="calculated other metrics to evaluate model performance, added plot for distribution of features with mixed log and non-transformed (normal)" />
     <MESSAGE value="created notebook for presenting results of the model training with placeholder text" />
     <MESSAGE value="solved zadatak_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved zadatak_1" />
+    <MESSAGE value="solved zadata_2, commited original data from zip file" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved zadata_2, commited original data from zip file" />
   </component>
 </project>
