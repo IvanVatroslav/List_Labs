@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="created notebook for presenting results of the model training with placeholder text">
-      <change beforePath="$PROJECT_DIR$/.idea/list_labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/list_labs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9eab3fd5-0fa6-49aa-90eb-d10e7d17306d" name="Changes" comment="solved zadatak_1">
+      <change afterPath="$PROJECT_DIR$/zadatak_1/response_bands.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_2/filtered_objects.geojson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_2/zadatak_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zadatak_3/training_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zadatak_1/zadatak_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_1/zadatak_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zadatak_3/zadatak_3_prezentacija.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/zadatak_3/zadatak_3_prezentacija.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,7 @@
     "Python.zadatak_1 (2).executor": "Run",
     "Python.zadatak_1 (3).executor": "Run",
     "Python.zadatak_1.executor": "Run",
+    "Python.zadatak_2.executor": "Run",
     "Python.zadatak_3 (1).executor": "Run",
     "Python.zadatak_3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -61,13 +61,14 @@
       <recent name="C:\Users\grdop\DataspellProjects\list_labs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grdop\DataspellProjects\List_Labs\zadatak_3" />
       <recent name="C:\Users\grdop\DataspellProjects\List_Labs\zadatak_1" />
       <recent name="C:\Users\ivan.zeljeznjak\DataspellProjects\List_Labs\zadatak_1" />
       <recent name="C:\Users\ivan.zeljeznjak\DataspellProjects\List_Labs\zadatak_3" />
       <recent name="C:\Users\grdop\DataspellProjects\list_labs\zadatak_3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.zadatak_1 (3)">
+  <component name="RunManager" selected="Python.zadatak_2">
     <configuration name="zadatak_1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="List_Labs" />
       <option name="ENV_FILES" value="" />
@@ -157,8 +158,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="zadatak_3 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="list_labs" />
+    <configuration name="zadatak_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="List_Labs" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,11 +167,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zadatak_3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zadatak_2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadatak_3/zadatak_3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zadatak_2/zadatak_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zadatak_2" />
         <item itemvalue="Python.zadatak_1 (3)" />
         <item itemvalue="Python.zadatak_1 (2)" />
         <item itemvalue="Python.zadatak_1 (1)" />
         <item itemvalue="Python.zadatak_1" />
-        <item itemvalue="Python.zadatak_3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +205,7 @@
     <MESSAGE value="tried other models such as" />
     <MESSAGE value="calculated other metrics to evaluate model performance, added plot for distribution of features with mixed log and non-transformed (normal)" />
     <MESSAGE value="created notebook for presenting results of the model training with placeholder text" />
-    <option name="LAST_COMMIT_MESSAGE" value="created notebook for presenting results of the model training with placeholder text" />
+    <MESSAGE value="solved zadatak_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved zadatak_1" />
   </component>
 </project>
